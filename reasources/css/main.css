@@ -1,0 +1,85 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: #FAF0E6;
+}
+
+body, h1, p{
+    margin: 0;
+}
+
+h1{
+    padding: 2px 0;
+    text-align: center;
+    font-size: 3.75rem;
+    font-family: 'Acme', sans-serif;
+}
+
+h2{
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 3px;
+    font-family: 'Secular One', sans-serif;
+}
+
+p{
+    font-family: 'Acme', sans-serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    padding: 5px;
+}
+
+.div-item{
+    font-family: helvetica;
+    border: 1px solid black;
+    border-radius: .5rem;
+    box-shadow: 3px;
+    padding: 3px;
+}
+
+.about{
+    grid-column: 1/span 2;
+    background-color: white;
+}
+
+.join{
+    grid-column-start: 4;
+    grid-row: span 2;
+    background-color: white;
+}
+
+.members{
+    grid-column-start: 3;
+    grid-row: 1/1;
+    background-color: #BFE3B4;
+}
+
+.events{
+    grid-column: 2/span 2;
+    grid-row: 2/2;
+    background-color: #F0F0F0;
+}
+
+.course{
+    background-color: #BFE3B4;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    body{
+        height:100%;
+        width:auto;
+    }
+}
+  
